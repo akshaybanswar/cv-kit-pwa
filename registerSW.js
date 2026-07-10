@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/cv-kit-pwa/sw.js', { scope: '/cv-kit-pwa/' })})}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>CV-Kit</title>
+    <script>
+      // Stamp a pinned theme BEFORE first paint (IndexedDB is async, so the
+      // durable copy can't stop a flash; this localStorage mirror can).
+      try {
+        var t = localStorage.getItem('cvkit-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <link rel="icon" href="favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CV-Kit" />
+    <meta name="theme-color" content="#0b3d2e" />
+    <script type="module" crossorigin src="/cv-kit-pwa/assets/index-_Lmp97nk.js"></script>
+    <link rel="stylesheet" crossorigin href="/cv-kit-pwa/assets/index-hAfxFwTs.css">
+  <link rel="manifest" href="/cv-kit-pwa/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/cv-kit-pwa/registerSW.js"></script></head>
+  <body>
+    <main id="app"></main>
+  </body>
+</html>
